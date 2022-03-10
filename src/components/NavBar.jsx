@@ -1,5 +1,7 @@
 import "./NavBar.css";
 import logo from "../logo.svg";
+import "./CartWidget.jsx";
+import CartWidget from "./CartWidget.jsx";
 
 function NavBar() {
   return (
@@ -19,6 +21,10 @@ function NavBar() {
         <a href=""> Tienda </a>
         <a href=""> Impresoras </a>
         <a href=""> Contacto </a>
+      </div>
+
+      <div>
+        <CartWidget />
       </div>
     </div>
   );
