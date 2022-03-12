@@ -1,5 +1,5 @@
-import "./NavBar.css";
-import logo from "../logo.svg";
+import "../styles/NavBar.css";
+import extrusor from "../images/extrusor.png";
 import "./CartWidget.jsx";
 import CartWidget from "./CartWidget.jsx";
 
@@ -8,7 +8,7 @@ function NavBar() {
     <div className="Nav">
       <div className="logo-marca">
         <div>
-          <img src={logo} />
+          <img src={extrusor} />
         </div>
 
         <div>
@@ -23,7 +23,7 @@ function NavBar() {
         <a href=""> Contacto </a>
       </div>
 
-      <div>
+      <div className="CartWidget">
         <CartWidget />
       </div>
     </div>

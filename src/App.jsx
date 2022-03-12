@@ -1,21 +1,24 @@
-import logo from "./logo.svg";
-import "./App.css";
-import "./components/NavBar.jsx";
 import NavBar from "./components/NavBar.jsx";
-import "./components/ItemListContainer.jsx";
 import ItemListContainer from "./components/ItemListContainer.jsx";
+import ItemCount from "./components/ItemCount.jsx";
+import React from "react";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div className="App">
+    <Fragment>
       <div>
         <NavBar />
       </div>
 
       <div>
-        <ItemListContainer />
+        <ItemListContainer item="filamentos" />
       </div>
-    </div>
+
+      <div>
+        <ItemCount />
+      </div>
+    </Fragment>
   );
 }
 

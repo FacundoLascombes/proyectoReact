@@ -1,11 +1,10 @@
-import "./ItemListContainer.css";
+import "../styles/ItemListContainer.css";
 import React from "react";
 
-const divStyles = {fontSize: "30px", backgroundColor: "red"}
+const divStyles = { fontSize: "30px", backgroundColor: "red" };
 
-function ItemListContainer() {
-    const saludo = "Hola! Me llamo Facundo!"; 
-    return <h1 style={divStyles}>{saludo}</h1>;
-}
+const ItemListContainer = (props) => {
+  return <h1> ¿Cuantos {props.item} vas a necesitar? </h1>;
+};
 
 export default ItemListContainer;

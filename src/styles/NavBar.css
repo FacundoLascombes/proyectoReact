@@ -1,0 +1,37 @@
+div .Nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+div .logo-marca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+div .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div .CartWidget {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 40px;
+}
+
+a {
+  margin-right: 50px;
+  font-size: x-large;
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  height: 150px;
+}
