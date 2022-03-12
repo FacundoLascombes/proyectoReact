@@ -22,23 +22,21 @@ const ItemCount = (props: { countStock: Number }) => {
   return (
     <Fragment>
       <div className="root">
-        <img src={filamento} />
+        <img className="filamento" src={filamento} />
         <h5>En Stock actualmente hay {stock}</h5>
         <h2> Cantidad: {countStock} </h2>
 
         <button
-          className="botonStyle, decr"
           disabled={botonActivo2}
           onClick={() => setCountStock(countStock - 1)}
         >
-          Decrementar
+           Quitar -
         </button>
         <button
-          className="botonStyle, incr"
           disabled={botonActivo1}
           onClick={() => setCountStock(countStock + 1)}
         >
-          Incrementar
+          + Agregar
         </button>
       </div>
     </Fragment>
