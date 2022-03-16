@@ -16,7 +16,7 @@ function App() {
       </div>
 
       <div>
-        <ItemCount />
+      <ItemCount stock={7} initial={1} />
       </div>
     </Fragment>
   );
