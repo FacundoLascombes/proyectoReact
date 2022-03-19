@@ -1,3 +1,19 @@
 h1 {
   color: black;
 }
+
+p {
+  color: black;
+}
+
+div .borderItem {
+  display: flex;
+  width: 80vh;
+  border: solid 5px black;
+  margin: 3%;
+}
+
+div .divRootItemList {
+  display: flex;
+  width: 70vh;
+}
