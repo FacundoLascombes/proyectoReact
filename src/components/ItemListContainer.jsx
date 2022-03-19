@@ -5,10 +5,6 @@ import { data } from '../data/data';
 
 const divStyles = { fontSize: "30px", backgroundColor: "red" };
 
-// const ItemListContainer = (props) => {
-//   return <h1> ¿Cuantos {props.item} vas a necesitar? </h1>;
-// };
-
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
