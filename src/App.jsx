@@ -1,11 +1,10 @@
 import NavBar from "./components/NavBar.jsx";
-import ItemsFetched from "./components/ItemList.jsx";
-import ItemListContainer from "./components/ItemListContainer.jsx";
 import ItemCount from "./components/ItemCount.jsx";
+import { ItemListContainer } from "./components/ItemListContainer";
 import React from "react";
 import { Fragment } from "react";
 
-<style color="black"></style>
+<style color="black"></style>;
 
 function App() {
   return (
@@ -15,15 +14,11 @@ function App() {
       </div>
 
       <div>
-        <ItemListContainer item="filamentos" />
-      </div>
-
-      <div>
         <ItemCount stock={7} initial={1} />
       </div>
 
       <div>
-        <ItemsFetched />
+        <ItemListContainer />
       </div>
     </Fragment>
   );

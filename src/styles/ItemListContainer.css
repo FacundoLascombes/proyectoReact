@@ -8,9 +8,18 @@ p {
 
 div .borderItem {
   display: flex;
-  width: 80vh;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vh;
   border: solid 5px black;
   margin: 3%;
+  padding: 3%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 div .divRootItemList {

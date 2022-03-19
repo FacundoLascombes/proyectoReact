@@ -1,16 +1,12 @@
-import items from "./Item";
+import { Item } from './Item';
 import React from "react";
 
- function ItemsFetched() {
-   new Promise(function (resolve, reject) {
-     setTimeout(() => {
-       resolve(items);
-     }, 2000);
-   });
- }
-
-  ItemsFetched().then(async function (ItemsFetched) {
-  
-  });
-
-export default ItemsFetched;
+ export const ItemList = ({ items }) => {
+   return (
+     <ul>
+       {items.map((item) => (
+        <Item item={item} />
+      ))}
+     </ul>
+   )
+ };

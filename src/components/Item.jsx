@@ -1,26 +1,24 @@
-const items = [
-    {
-        id: 1,
-        title: 'Filamento Blanco',
-        description: 'Filamento color blanco, PLA perfecto para tus mejores impresiones',
-        price: 1200,
-        image: 'https://sensakey.com/fotos_pdt/108.3DDEV.PLA.175-BLANCO/pla_175_white.jpg',
-    },
+import React from "react";
+import "../styles/ItemListContainer.css";
 
-    {
-        id: 2,
-        title: 'Filamento Rojo',
-        description: 'Filamento color rojo, PLA perfecto para tus mejores impresiones',
-        price: 1200,
-        image: 'https://3dcut.b-cdn.net/2231-large_default/rojo-asa-filamento-175-mm-750-g.jpg',
-    },
-    {
-        id: 3,
-        title: 'Filamento Azul',
-        description: 'Filamento color azul, PLA perfecto para tus mejores impresiones',
-        price: 1200,
-        image: 'https://sinosupply.com.mx/uploads/posts/09-10-19-15-35-23-azul-filamento-absjpg.jpg',
-    },
-]
-
-export default items;
+export const Item = ({ item }) => {
+  return (
+    <div className="borderItem">
+      <li>
+        <p>Numero de id del filamento: {item.id}</p>
+      </li>
+      <li>
+        <h1>{item.title}</h1>
+      </li>
+      <li>
+        <p>{item.description}</p>
+      </li>
+      <li>
+        <h4>{item.price}</h4>
+      </li>
+      <li>
+        <img src={item.image} alt="" />
+      </li>
+    </div>
+  );
+};
