@@ -19,11 +19,6 @@ export const ItemListContainer = () => {
 
     getItems.then((res) => {
       setItems(res);
-      return (
-        <div>
-          <h1>hgoads</h1>
-        </div>
-      )
     });
   }, []);
 
