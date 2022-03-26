@@ -1,4 +1,4 @@
-import "../styles/ItemListContainer.css";
+import "../styles/ItemDetailContainer.css";
 import { useEffect, useState } from "react";
 import { data } from "../data/data";
 import { ItemList } from "./ItemList";
@@ -23,7 +23,7 @@ export const ItemDetailContainer = () => {
   console.log(items);
 
   return (
-    <div>
+    <div className="divRootItemList">
        {items.map(items => 
         <div key={items.id} className="borderItem">
           <h1>{items.title}</h1>

@@ -8,12 +8,14 @@ p {
 
 div .borderItem {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 90vh;
   border: solid 5px black;
   margin: 3%;
   padding: 3%;
+  text-align: center;
 }
 
 ul {
@@ -24,5 +26,8 @@ ul {
 
 div .divRootItemList {
   display: flex;
-  width: 70vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-width: 70vh;
 }
