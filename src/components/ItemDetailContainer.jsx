@@ -1,5 +1,6 @@
 import "../styles/ItemDetailContainer.css";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { data } from "../data/data";
 import { ItemList } from "./ItemList";
 
@@ -26,7 +27,7 @@ export const ItemDetailContainer = () => {
     <div className="divRootItemList">
        {items.map(items => 
         <div key={items.id} className="borderItem">
-          <h1>{items.title}</h1>
+          <NavLink to='/category/item/:id' > <h1>{items.title}</h1> </NavLink> 
           <p>{items.description}</p>
           <img src={items.image} alt="" />
         </div>
