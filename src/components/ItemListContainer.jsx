@@ -2,8 +2,7 @@ import "../styles/ItemListContainer.css";
 import React, { useEffect, useState } from 'react';
 import { ItemList } from './ItemList';
 import { data } from '../data/data';
-
-const divStyles = { fontSize: "30px", backgroundColor: "red" };
+//import { item } from './ItemDetailContainer';
 
 
 export const ItemListContainer = () => {
@@ -21,6 +20,7 @@ export const ItemListContainer = () => {
       setItems(res);
     });
   }, []);
+
 
   return <ItemList items={items} />
 };
